@@ -1,46 +1,26 @@
-<footer class="site-footer">
+<footer class="site-footer center">
 
-  <div class="wrapper">
+<div class="container">
+	
+	<ul class="footer-links center">
+		{% if site.facebook_username %} <li><a href="http://facebook.com/{{site.facebook_username}}" target="_blank" >Facebook</a></li> {% endif %}
+		{% if site.twitter_username %}<li><a href="http://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>{% endif %}
+		
+		{% if site.google_username %} <li><a href="http://plus.google.com/+{{site.google_username}}" target="_blank" >Google+</a></li> {% endif %}
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+		{% if site.linkedin_username %} <li><a href="http://linkedin.com/in/{{site.linkedin_username}}" target="_blank" >LinkedIn</a></li> {% endif %}
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
+		{% if site.behance_username %} <li><a href="https://www.behance.net/{{site.behance_username}}" target="_blank" >LinkedIn</a></li> {% endif %}
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+		{% if site.dribble_username %} <li><a href="https://dribbble.com/{{site.dribble_username}}" target="_blank" >Dribble</a></li> {% endif %}
+		
+		{% if site.github_username %} <li><a href="https://github.com/{{site.github_username}}" target="_blank" >Github</a></li> {% endif %}
+		
+		
+		
+	</ul>
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+</div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
 
 </footer>
