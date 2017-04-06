@@ -30,6 +30,9 @@ Grid System
   overflow: hidden;
 }
 
+.center-verticaly{
+  text-align: center;
+}
 .center{
   display: flex;
   justify-content: center;
@@ -111,8 +114,68 @@ header .button {
 
 }
 
+/**
+  * Services
+  */
+#services{
+  background-color: #17c2a4;
+  padding:120px 30px;
+}
 
 
+
+.service-heading .secondary-heading{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.service-heading .secondary-heading:after{
+  content: '';
+  display: block;
+  background: #14a58c;
+  height: 4px;
+  max-width: 88px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-heading .secondary.description{
+  font-size: 26px;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.4;
+
+} 
+
+.our-services{
+  margin-top: 80px;
+}
+
+.service-block{
+  width: 23%;
+  float: left;
+  padding:10px 30px;
+}
+
+.service-block h3{
+  margin-top: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+ 
+}
+.service-block p{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
 
 
 /**
