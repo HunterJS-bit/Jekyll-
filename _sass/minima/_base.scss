@@ -175,11 +175,6 @@ header .button {
   margin-top: 80px;
 }
 
-// .service-block{
-//   width: 24%;
-//   float: left;
-//   padding:10px 30px;
-// }
 
 .service h3{
   margin-top: 60px;
@@ -251,6 +246,53 @@ header .button {
   line-height: 150%;
   color: #535e75;
 }
+
+.social-icons > * + *{
+  margin-left: 10px;
+}
+
+
+
+/*
+ * Skills
+ */
+
+#skills{
+  background-color: #fff;
+    padding: 120px 30px;
+}
+    
+#skills .secondary-heading{
+  color: #3c4761;
+}
+
+#skills .secondary-heading:after{
+  background-color: #dfe8ed;
+}
+
+#skills .secondary-description{
+  color: #3c4761;
+}
+
+
+.our-skills {
+    margin-top: 80px;
+}
+
+
+
+.skill .skill-name{
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #3c4761;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
 /**
   * Footer
   */
@@ -424,7 +466,19 @@ pre {
   height: 32px;
   border-radius: 50%;
   background-color:#bdd1df;
+  cursor: pointer;
+  transition: background-color 0.6s;
+
  }
+
+ .facebook-icon:hover{
+  background-color:#3b5998;
+ }
+  
+  .linkedin-icon:hover{
+    background-color:#0077b5;
+  }
+ 
 
 .icon > svg {
   display: inline-block;
@@ -433,4 +487,10 @@ pre {
   path {
     fill: #fff;
   }
+}
+
+svg text{
+  font-size: 40px;
+  font-weight: 300;
+  fill: #3c4761;
 }
