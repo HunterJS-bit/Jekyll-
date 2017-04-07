@@ -114,6 +114,38 @@ header .button {
 
 }
 
+/* Repetaing Content */
+
+
+.secondary-heading{
+   text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.secondary-description{
+   font-size: 18px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.secondary-heading:after{
+  content: '';
+  display: block;
+  height: 4px;
+  max-width: 88px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.block{
+   width: 24%;
+  float: left;
+  padding:10px 30px;
+}
+
+
 /**
   * Services
   */
@@ -126,41 +158,30 @@ header .button {
 
 .service-heading .secondary-heading{
   color: #fff;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 .service-heading .secondary-heading:after{
-  content: '';
-  display: block;
+ 
   background: #14a58c;
-  height: 4px;
-  max-width: 88px;
-  width: 100%;
-  margin: 0 auto;
+  
 }
 
-.service-heading .secondary.description{
-  font-size: 26px;
+.service-heading .secondary-description{
   color: #fff;
-  font-weight: normal;
-  line-height: 1.4;
-
+  
 } 
 
 .our-services{
   margin-top: 80px;
 }
 
-.service-block{
-  width: 23%;
-  float: left;
-  padding:10px 30px;
-}
+// .service-block{
+//   width: 24%;
+//   float: left;
+//   padding:10px 30px;
+// }
 
-.service-block h3{
+.service h3{
   margin-top: 60px;
   color: #fff;
   text-transform: uppercase;
@@ -169,7 +190,7 @@ header .button {
   letter-spacing: 0.02em;
  
 }
-.service-block p{
+.service p{
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -178,6 +199,58 @@ header .button {
 }
 
 
+
+/**
+  * Our Team
+  */
+
+#our-team{
+  background-color:#e7f1f8;
+    padding:120px 30px;
+}
+
+#our-team .secondary-heading{
+  color: #3c4761;
+}
+
+#our-team .secondary-heading:after{
+  background: #c8d9e5;
+}
+#our-team .secondary-description{
+  color: #3c4761;
+}
+
+.team-member {
+    width: 100%;
+    height: 199px;
+    background: #878787;
+    border-radius: 50%;
+}
+
+.team h3{
+  margin-top: 60px;
+  color: #3c4761;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+ 
+}
+
+.team .position{
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color:#48c1e9;
+
+}
+
+.team .member-info{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #535e75;
+}
 /**
   * Footer
   */
@@ -346,11 +419,18 @@ pre {
 /**
  * Icons
  */
+.icon{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color:#bdd1df;
+ }
+
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
 
   path {
-    fill: $grey-color;
+    fill: #fff;
   }
 }
